@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Paciente HL7 FHIR</title>
+</head>
+<body>
+    <h1>Formulario de Paciente HL7 FHIR</h1>
+    <form id="patientForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="familyName">Apellido:</label>
+        <input type="text" id="familyName" name="familyName" required><br><br>
+
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+            <option value="unknown">Desconocido</option>
+        </select><br><br>
+
+        <label for="birthDate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthDate" name="birthDate" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
